@@ -40,7 +40,16 @@ def hit?(total)
   prompt_user do 
     a = get_user_input
     if a = "h"
-      
+      total = total + deal_card
+      total
+      break
+    end
+    if a = "s"
+      total
+      break
+    end 
+    invalid_command
+  end
   
 end
 
