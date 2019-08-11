@@ -35,10 +35,17 @@ def initial_round
   total
 end
 
-def hit?(string)
+def hit?(total)
   # code hit? here
   prompt_user
-  get_user_input
+  input = get_user_input
+  if input = "s"
+    return total
+  end
+  if input = "h"
+    total = total + deal_card
+  end
+  invalid_command
   
 end
 
