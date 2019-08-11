@@ -38,7 +38,9 @@ end
 def hit?(total)
   # code hit? here
   prompt_user do 
-    
+    a = get_user_input
+    if a = "h"
+      
   
 end
 
