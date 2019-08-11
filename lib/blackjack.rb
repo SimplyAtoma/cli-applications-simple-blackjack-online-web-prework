@@ -37,7 +37,8 @@ end
 
 def hit?(total)
   # code hit? here
-  prompt_user
+  prompt_user do 
+    
   
 end
 
