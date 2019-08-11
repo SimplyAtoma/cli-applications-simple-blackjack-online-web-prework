@@ -44,8 +44,6 @@ prompt_user
   elsif input = "h"
     total = total + deal_card
   end
-  invalid_command
-  prompt_user
   
 end
 
