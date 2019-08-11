@@ -30,7 +30,6 @@ end
 
 def hit?
   # code hit? here
-  if 
 end
 
 def invalid_command
