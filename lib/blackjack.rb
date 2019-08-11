@@ -37,19 +37,15 @@ end
 
 def hit?(total)
   # code hit? here
-  prompt_user do 
-    a = get_user_input
-    if a = "h"
-      total = total + deal_card
-      return total
-      break
-    end
-    if a = "s"
-      return total
-      break
-    end 
-    invalid_command
+prompt_user
+  input = get_user_input
+  if input = "s"
+    return total
+  elsif input = "h"
+    total = total + deal_card
   end
+  invalid_command
+  prompt_user
   
 end
 
