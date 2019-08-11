@@ -31,11 +31,14 @@ end
 def initial_round
   # code #initial_round here
   total = deal_card + deal_card
-  total
+  display_card_total(total)
 end
 
 def hit?
   # code hit? here
+  prompt_user
+  get_user_input
+  
 end
 
 def invalid_command
